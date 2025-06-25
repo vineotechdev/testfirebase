@@ -1,0 +1,8 @@
+{
+  "name": "testfirebase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite",
+  "id": "2518220c"
+}
