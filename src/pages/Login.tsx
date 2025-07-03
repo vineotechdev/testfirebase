@@ -33,6 +33,20 @@ const Login: React.FC = () => {
     }
   };
 
+  const googleLogin = async () => {
+    try {
+      const result = await FirebaseAuthentication.signInWithGoogle()
+      console.log('Google login result:', result);
+      setToastMessage('Google login successful!');
+      setErrorText('');
+      history.push('/home');
+    } catch (err: any) {
+      console.error('Google login error:', err);
+      setErrorText(JSON.stringify(err)); // show on screen
+      setToastMessage('Google login failed.');
+    }
+  };
+
   return (
     <IonPage>
       <IonContent className="ion-padding">
@@ -67,6 +81,32 @@ const Login: React.FC = () => {
         <IonButton expand="block" onClick={handleLogin} className="ion-margin-top">
           Login
         </IonButton>
+        <br />
+        <br />
+        <br />
+        <button
+          onClick={googleLogin}
+          style={{
+            backgroundColor: '#ffffff',
+            border: '1px solid #ddd',
+            borderRadius: 8,
+            padding: '12px 20px',
+            fontSize: 16,
+            fontWeight: 500,
+            display: 'flex',
+            alignItems: 'center',
+            cursor: 'pointer',
+            boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
+          }}
+        >
+          <img
+            src="https://developers.google.com/identity/images/g-logo.png"
+            alt="Google"
+            style={{ width: 20, height: 20, marginRight: 10 }}
+          />
+          Sign in with Google
+        </button>
+
 
         <IonText className="ion-text-center ion-margin-top">
           <p onClick={() => history.push('/signup')} style={{ cursor: 'pointer', color: 'blue' }}>
