@@ -2,12 +2,12 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MSG_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyA3e8qBjF90YSoUH_yR8y1aMQy2F1A5B6M",
+  authDomain: "testfirebase-ae80d.firebaseapp.com",
+  projectId: "testfirebase-ae80d",
+  storageBucket: "testfirebase-ae80d.firebasestorage.app",
+  messagingSenderId: "241888573755",
+  appId: "1:241888573755:web:f06bb9b0a34add169a5f1e"
 };
 
 const app = initializeApp(firebaseConfig);
