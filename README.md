@@ -6,3 +6,14 @@ add fireabse confign defautl one
 add two depenceies in variabel .gradle 
     rgcfaIncludeGoogle = true
     androidxCredentialsVersion = '1.3.0'
+
+
+For ios 
+ remove old podlock fiel and fireabse authntication to pod file 
+ sync
+
+target 'App' do
+  capacitor_pods
+  pod 'CapacitorFirebaseAuthentication/Google', :path => '../../node_modules/@capacitor-firebase/authentication'
+  # Add your Pods here
+end  add capactiro core to pod and then sync 
