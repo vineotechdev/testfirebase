@@ -17,3 +17,8 @@ target 'App' do
   pod 'CapacitorFirebaseAuthentication/Google', :path => '../../node_modules/@capacitor-firebase/authentication'
   # Add your Pods here
 end  add capactiro core to pod and then sync 
+
+Add fireabse.core in appdeleagte
+
+   FirebaseApp.configure()
+
