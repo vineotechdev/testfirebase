@@ -1,3 +1,4 @@
+For Android 
 Add sha certificate by usig thsi comand keytool -list -v -keystore ../../rishtamereliyerelease.keystore -alias rishtamereliyerelease -storepass yourpassword@11 -keypass yourkeypass@11
 Add sha1 to firebase app location 
 add gogel service json file to your andoird /app
